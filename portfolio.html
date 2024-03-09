@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<header>
+    <title>Portfolio Valentin</title>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</header>
+
+<body id="top">
+    <div id="navbar">
+        <div id="onglets">
+            <a href="#accueil"><onglet>Accueil</onglet></a>
+            <a href="#mesinfos"><onglet>Infos</onglet></a>
+            <a href="#mesprojets"><onglet>Projets</onglet></a>
+            <a href="#moncv"><onglet>CV</onglet></a>
+            <a href="#contact"><onglet>Contact</onglet></a>
+        </div>
+    </div>
+        <div id="contenus">
+
+            <!--Page Accueil-->
+
+            <contenu id="accueil">
+                <div id="container_gauche"> 
+                    <div class="contenu_gauche">
+                        <div id="table">
+                            <div id="centeralign">
+                              <h1>Valentin Godec</h1>
+                              <p>Je suis développeur web recherchant une alternance pour préparer le titre de concepteur
+                                développeur applications.
+                              </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div id="container_droit">
+                    <img class="image" src="img/Img_Accueil.avif" />  
+                </div>
+            </contenu>
+
+            <!--Page Infos-->
+
+            <contenu id="mesinfos">
+                    <div hidden>
+                            <a href="#contenu_moi" id="moi">A propos de moi</a><br />
+                            <a href="#contenu_projets" id="projets">Projets</a><br/>
+                            <a href="#contenu_exps" id="exps">Expériences</a>
+                    </div>
+                
+                    <div id="container_infos">
+                        <div id="contenu_infos">
+                        <span id="section1">
+                            <h1 id="contenu_moi">- A propos de moi -</h1>
+                            <center>
+                                    <img src="img/logo.png" style="height:100px;width:60px;"/>
+                            </center>
+                            <p class="presentation">Je suis un développeur web débutant ayant un BAC+2 BTS Services Informatiques aux Organisations.
+                                Je cherche actuellement une alternance pour préparer un bachelor concepteur, développeur
+                                d'application.
+                                <br />
+                                Je suis actuellement dans les secteurs de Brest et Rennes.
+                                <br />
+                                Mon parcours ma octroyé de solides compétences que ce soit du côté back-end ou front-end.
+                                et mes stages chez eureden et Sofimat m'ont permis d'acquérir des compétences dans le Wlangage en auto-didacte.
+                            </p>
+                        </span>
+                        <hr class="separateur">
+                        <span>
+                            <h1>- Mes compétences -</h1>
+                            <p> retrouvez ici mes compétences</p>
+                            <cent   er>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>HTML - CSS</p>
+                                            <div id="advances">
+                                                <div class="progress" id="activate_progress">
+                                                    <span id="progress1">70%</span>
+                                                </div>
+                                                <p>PHP - MySQL</p>
+                                                <div class="progress">
+                                                    <span id="progress2">70%</span>
+                                                </div>
+                                                <p>WLangage - HFSQL</p>
+                                                <div class="progress">
+                                                    <span id="progress3">60%</span>
+                                                </div>
+                                                <p>Js - Node.js</p>
+                                                <div class="progress">
+                                                    <span id="progress4">40%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="img/logo.png" style="width:40em;height:30em;padding-right:10em;"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </span>
+                    </contenu>
+                    <contenu id="mesprojets">
+                    <hr class="separateur">
+                        <span>
+                            <h1 id="contenu_projets">- Les projets sur lesquelles j'ai travaillé -</h1>
+                            <div class="blocks">
+                                <div class="modal_open" data-modal="modal-medic" data-aos="fade-up">
+                                    <img src="img/Page_gsb1.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
+                                    <div class="texte">
+                                        <h2 id="section2">Site Médical</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal_open" data-modal="popup-piano" data-aos="fade-up">
+                                    <img src="img/Page_Sofimat.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
+                                    <div class="texte">
+                                        <h2>Site Piano</h2>
+                                    </div>
+                                </div>
+                                <div class="modal_open" data-modal="popup-eureden" data-aos="fade-up">
+                                    <img src="img/eureden.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
+                                    <div class="texte">
+                                        <h2>Appli Webdev</h2>
+                                    </div>
+                                </div>
+                                <div class="modal_open" data-modal="popup-sofimat" data-aos="fade-up">
+                                    <img src="img/Page_Sofimat.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
+                                    <div class="texte">
+                                        <h2>Appli Windev</h2>
+                                    </div>
+                                </div>
+                                <div class="modal_open" data-modal="popup-portfolio" data-aos="fade-up">
+                                    <img src="img/accueil.PNG" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
+                                    <div class="texte">
+                                        <h2 id="section2">Portfolio</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </span> 
+                    </contenu>    
+                    <hr class="separateur">
+                    <contenu>
+                        <span>
+                            <div class="CV">
+                                <h2 id="moncv">- Mon CV -</h2>
+                                <br/>
+                                <center>
+                                <embed src="CV_Valentin.pdf" width="1000" height="1200" type="application/pdf"/>  
+                                </center>
+                            </div>
+                            
+                            
+                        </span>
+                    </contenu>
+                    <hr class="separateur">
+                        <span>
+                            <h1 id="contenu_exps">- Mes Expériences Professionnelles -</h1>
+                            <p>2022 - Stage chez Eureden en tant que développeur</p>
+                            <p>2023 - Stage chez Sofimat en tant que développeur</p>
+                        </span>
+                    </div>
+                    
+                </div>
+                <!--popups-->
+                <!--popup medic-->
+
+                <div class="modal" id="modal-medic">
+                    <div class="modal-content">
+                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                            <div>
+                                <h1>Mise en situation GSB - Site médical</h1>
+                                <h2>BTS SIO - 1ere année</h2>
+                                <h4>Projet lors de mon BTS SIO réalisé sur les deux années.</h4>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td style="width:50%";>
+                                                <img style="width: 400px; height:275px; vertical-align: top; border-radius:15px;" src="img/Page_consultation_HF.png"/>
+                                            </td>
+                                            <td>
+                                                <p style="font-family: Apple Chancery, cursive; font-size:18px;">
+                                                    Réalisation d'une application web légère permettant aux visiteurs médicaux de
+                                                    gérer des fiches de frais lors de leurs déplacements.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h2>BTS SIO - 2eme année</h2>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                                Réalisation d'une application lourde avec un CRUD permettant aux visiteurs médicaux de
+                                                gérer leurs comptes rendus.
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="img/Supprimer_CR_apres.png"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
+                                <p class="techniques_informatiques">
+                                    HTML - CSS - Javascript - PHP - MySQL - Vb Net
+                                </p>
+                            </div>
+                    </div>
+                </div>
+
+                <!--popup piano-->
+                
+                <div class="modal" id="popup-piano">
+                    <div class="modal-content">
+                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                            <div>
+                                <h1>/// En Cours ///</h1>
+                                <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                    Projet personnel me permettant de suivre ma progression
+                                    au piano, avec des cours, des musiques sur lesquelles je souhaite / je travaille.
+                                </p>
+                                <hr>
+                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
+                                <p class="techniques_informatiques">
+                                    HTML - CSS - Javascript
+                                </p>
+                            </div>
+                    </div>
+                </div>
+
+                <!--popup eureden-->
+                
+                <div class="modal" id="popup-eureden">
+                    <div class="modal-content">
+                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                            <div>
+                                <h1>eureden</h1>
+                                <h3>Projet réalisé lors de mon stage de première année en BTS</h3>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                                    Réalisation d'une application Webdev permettant de gérer les utilisateurs
+                                                    ainsi que les privilèges selon leurs roles.
+                                                    Réalisation d'une application Webdev permettant de gérer les rôles et privilèges
+                                                    des différents utilisateurs.
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="img/eureden.png"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
+                                    <p class="techniques_informatiques">
+                                        Webdev - HFSQL
+                                    </p>
+                            </div>
+                    </div>
+                </div>
+
+                <!--popup Sofimat-->
+                
+                <div class="modal" id="popup-sofimat">
+                    <div class="modal-content">
+                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                            <div>
+                                <h1>sofimat</h1>
+                                <h3>Projet réalisé lors de mon stage de deuxième année en BTS.</h3>
+                                <table>
+                                    <tr>
+                                        <td style="width:50%;">
+                                            <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="img/sofimat.png"/>
+                                        </td>
+                                        <td>
+                                            <p style="padding-left:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                                    Réalisation d'une application Windev permettant au chefs de projets de piloter
+                                                    les activités sur le mois en cours des techniciens.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
+                                <p class="techniques_informatiques">
+                                    Windev - HFSQL
+                                </p>
+                            </div>
+                    </div>
+                </div>
+
+                <!--popup portfolio-->
+                
+                <div class="modal" id="popup-portfolio">
+                    <div class="modal-content">
+                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                            <div>
+                                <h1>portfolio</h1>
+                                <h3>Site sur lequel vous êtes.</h3>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                                Projet permettant de montrer les différents projets sur lesquelles j'ai pu travailler.
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="img/accueil.PNG"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
+                                <p class="techniques_informatiques">
+                                    HTML - CSS - Javascript
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </contenu>
+
+            <!--Page Contact-->
+            <contenu id="contact">
+                    <div class="contenu_contact">
+                        <div class="contact">
+                            <h1>- Me contacter -</h1>
+                            <hr>
+                            <h2>Email: </h2>
+                            <a class="email" id="btn_shine" href="mailto:godecvalentin@gmail.com">godecvalentin@gmail.com</a>
+                            <h2>Linkedin: </h2>
+                            <a class="linkedin" id="btn_shine" href="https://urlz.fr/nXIj" target="_blank">Valentin Godec</a>
+                            <h2>Github: </h2>
+                            <a class="github" id="btn_shine" href="https://github.com/ValentinGodec" target="_blank">Cliquer pour voir</a>
+                        </div>
+                    </div>
+            </contenu>
+        </div>
+        <script src="portfolio2.js"></script>
+</body>
+
+<footer class="bas_de_page">
+    <div class="technologies">
+        <div><p>Portofolio réalisé avec </p></div>
+        <div><img src="img/technos.png" /></div>
+    </div>
+</footer>
+</html>
+
