@@ -8,32 +8,32 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+#centeralign{
+    position: absolute;
+    top:40%;
+    left:35%;
+}
+
 #centeralign h1 {
-    text-transform: uppercase;
     letter-spacing: 1pt;
-    font-size: 30pt;
+    font-size: 40pt;
     margin-bottom: 15px;
+    color:rgb(234, 209, 17);
+    text-shadow: 5px 5px 5px black;
 }
   
 #centeralign p{
-    text-align: left;
     margin: 0;
-    text-transform: lowercase;
-    font-size: 10pt;
+    font-size: 24pt;
     font-weight: 900;
-    width: 50%;
+    width: 80%;
+    color:lightblue;
+    text-shadow: 5px 5px 5px black;
   }
-  
-#centeralign #table {
-    display: table;
-    width: 100%;
-    height: 100%;
-  }
-  
-#centeralign {
-    display: table-cell;
-    vertical-align: middle;
-    padding-top:30%;
+
+#container h1{
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #navbar{
@@ -53,6 +53,8 @@ body{
 .presentation{
     width:70%;
     padding-left:15%;
+    font-family: system-ui;
+    font-size: 18px;
 }
 
 b{
@@ -70,27 +72,9 @@ b{
     cursor:default;
 }
 
-
-#container_gauche{
-    width:40%;
-	float:left;
-	background: linear-gradient(#c0741e, lightblue);
-	margin:0;
+#container_accueil{
     height:750px;
-    font-size: 34px;  
-}
-
-#container_droit{
-    height:750px;
-	width:60%;
-	margin-left:40%;
-}
-
-
-.contenu_gauche{   
-    color:black;
-    padding-left:15px;
-    padding-top:25%; 
+	width:100%;
 }
 
 #navbar #onglets onglet{
@@ -155,7 +139,7 @@ onglet.actif{
 
 /* Page Infos */
 
-#container_infos{
+#container{
     height:100%;
 	width:100%;
 	margin:0;
@@ -165,18 +149,12 @@ onglet.actif{
     color:white;
 }
 
-#contenu_infos{
+#contenu{
     background-color:#2b2a2a;
     width:80%;
     margin-left:10%;
     padding: 10px 10px 10px 10px;
     color:white;
-}
-
-#container_infos p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    color: white;
 }
 
 #infos hr{
@@ -332,6 +310,10 @@ td{
     transition: padding-left 2s ease-in-out;
 }
 
+
+#advances{
+    padding-left:5%;
+}
 .CV{
     padding-top:25px;
 }
@@ -428,9 +410,20 @@ td{
 
 @keyframes shine{
   0%{
-    background-position: -200px;}
+    background-position: -400px;}
   50%{
     background-position: 60px;}
   100%{
-    background-position: 240px;}
+    background-position: 210px;}
+}
+
+.description{
+    text-align: center;
+    font-family: serif;
+    font-size:18px;
+}
+
+.pro{
+    font-family: system-ui;
+    font-size: 18px;
 }
