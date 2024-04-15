@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
         progress[0].style.paddingLeft = "70%";
         progress[1].style.paddingLeft = "70%";
         progress[2].style.paddingLeft = "60%";
-        progress[3].style.paddingLeft = "40%";
+        progress[3].style.paddingLeft = "60%";
+        progress[4].style.paddingLeft = "40%";
     }
 
     // Observer l'intersection pour déterminer quand la barre de progression est visible
@@ -91,3 +92,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observer la barre de progression
     observer.observe(progressBar);
 });
+
