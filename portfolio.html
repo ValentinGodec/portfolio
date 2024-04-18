@@ -48,8 +48,8 @@
                             <a href="#contenu_exps" id="exps">Expériences</a>
                     </div>
                 
-                            <span id="section1">
-                                <h1 id="contenu_moi">- A propos de moi -</h1>
+                            <span>
+                                <h1>- A propos de moi -</h1>
                                 <center>
                                         <img src="css/img/photos_profil.jpg" style="height:250px;width:250px;border-radius: 360px;clip:rect(0,0,50px,0);"/>
                                 </center>
@@ -62,7 +62,7 @@
                                     node js, angular et TypeScript.
                                     <br/>
                                     À la rentrée 2024, j'entreprends une formation en alternance de 
-                                    Concepteur développeur d'applications afin de devenir développeur full strack.
+                                    Concepteur développeur d'applications afin de devenir développeur full stack.
                                     <br/>
                                 </p>
                             </span>
@@ -71,7 +71,7 @@
                                 <h1>- Mes compétences -</h1>
                                 <p class="description"> Dans cette section, je vous invite à explorer un aperçu de mes compétences, acquises au fil de mon parcours professionnel</p>
                                 <center>
-                                    <table>
+                                    <table class="tableprogress">
                                         <tr>
                                             <td>
                                                 <div id="advances">
@@ -79,7 +79,7 @@
                                                     <div class="progress" id="activate_progress">
                                                         <span id="progress1">70%</span>
                                                     </div>
-                                                    <p>MySQL - HFSQL</p>
+                                                    <p>MySQL - HFSQL - NoSQL</p>
                                                     <div class="progress">
                                                         <span id="progress2">70%</span>
                                                     </div>
@@ -108,37 +108,37 @@
                     <contenu id="mesprojets">
                     <hr class="separateur">
                         <span>
-                            <h1 id="contenu_projets">- Portfolio -</h1>
-                            <p class="description">Vous trouverez ci-dessous les projets sur lesquelles j'ai travaillé durant mes stages et formations</p>
+                            <h1>- Portfolio -</h1>
+                            <p class="description">Vous trouverez ci-dessous les projets sur lesquelles j'ai travaillé</p>
                             <div class="blocks">
                                 <div class="modal_open" data-modal="modal-medic" data-aos="fade-up">
                                     <img src="css/img/Page_gsb1.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
-                                    <div class="texte">
-                                        <h2 id="section2">Site Médical</h2>
+                                    <div class="modal-txt">
+                                        <h2>Site Médical</h2>
                                     </div>
                                 </div>
                                 
                                 <div class="modal_open" data-modal="popup-piano" data-aos="fade-up">
-                                    <img src="css/img/Page_Sofimat.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
-                                    <div class="texte">
+                                    <img src="css/img/home_piano.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
+                                    <div class="modal-txt">
                                         <h2>Site Piano</h2>
                                     </div>
                                 </div>
                                 <div class="modal_open" data-modal="popup-eureden" data-aos="fade-up">
                                     <img src="css/img/eureden.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
-                                    <div class="texte">
+                                    <div class="modal-txt">
                                         <h2>Appli Webdev</h2>
                                     </div>
                                 </div>
                                 <div class="modal_open" data-modal="popup-sofimat" data-aos="fade-up">
                                     <img src="css/img/Page_Sofimat.png" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
-                                    <div class="texte">
+                                    <div class="modal-txt">
                                         <h2>Appli Windev</h2>
                                     </div>
                                 </div>
                                 <div class="modal_open" data-modal="popup-portfolio" data-aos="fade-up">
                                     <img src="css/img/portfolio.PNG" style="top:0;left:0;width:100%;height:100%;position:absolute;" />
-                                    <div class="texte">
+                                    <div class="modal-txt">
                                         <h2 id="section2">Portfolio</h2>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                 </div>
                 </div>
                 <!--popups-->
-                <!--popup medic-->
+                <!--popup gsb-->
 
                 <div class="modal" id="modal-medic">
                     <div class="modal-content">
@@ -180,7 +180,7 @@
                                                 <img style="width: 400px; height:275px; vertical-align: top; border-radius:15px;" src="css/img/Page_gsb2.PNG"/>
                                             </td>
                                             <td>
-                                                <p style="font-family: Apple Chancery, cursive; font-size:18px;">
+                                                <p>
                                                     Réalisation d'une application web permettant aux visiteurs médicaux de
                                                     gérer des fiches de frais lors de leurs déplacements.
                                                 </p>
@@ -192,7 +192,7 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                            <p style="padding-right:10px;">
                                                 Réalisation d'une application avec un CRUD permettant aux visiteurs médicaux de
                                                 gérer leurs comptes rendus.
                                             </p>
@@ -203,10 +203,25 @@
                                     </tr>
                                 </table>
                                 <hr>
-                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
-                                <p class="techniques_informatiques">
-                                    HTML - CSS - Javascript - PHP - MySQL - Vb Net
-                                </p>
+                                <h2 class="tech_util">Techniques utilisées: </h2>
+                                <table class="techniques_informatiques">
+                                    <tr>
+                                        <td><img class="html" src="css/img/html.png"/></td>
+                                        <td><p>HTML</p></td>
+                                        <td><img class="css" src="css/img/css.png"/></td>
+                                        <td><p>CSS</p></td>
+                                        <td><img class="js" src="css/img/js.png"/></td>
+                                        <td><p>JavaScript</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="php" src="css/img/php.png"/></td>
+                                        <td><p>PHP</p></td>
+                                        <td><img class="mysql" src="css/img/sql.png"/></td>
+                                        <td><p>Mysql</p></td>
+                                        <td><img class="vb" src="css/img/vb.png"/></td>
+                                        <td><p>Vb .net</p></td>
+                                    </tr>
+                                </table>
                             </div>
                     </div>
                 </div>
@@ -217,16 +232,39 @@
                     <div class="modal-content">
                         <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
                             <div>
-                                <h1>/// En Cours ///</h1>
-                                <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
-                                    Projet personnel me permettant de suivre ma progression
-                                    au piano, avec des cours, des musiques sur lesquelles je souhaite / je travaille.
-                                </p>
+                                <h1>Site d'apprentissage pour le piano</h1>
+                                <h4>Projet personnel réalisé en auto-didacte</h4>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Réalisation d'une application avec un crud me permettant de stocker
+                                                mes musiques ainsi qu'une partie cours.
+                                            </p>
+                                        </td>
+                                        <td><img  style="width:400px; height:275px;" src="css/img/site_piano.png"/></td>
+                                    </tr>
+                                </table>
                                 <hr>
-                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
-                                <p class="techniques_informatiques">
-                                    HTML - CSS - Node.Js - Angular - TypeScipt - NoSQL
-                                </p>
+                                <h2 class="tech_util">Techniques utilisées: </h2>
+                                <table class="techniques_informatiques">
+                                    <tr>
+                                        <td><img class="html" src="css/img/html.png"/></td>
+                                        <td><p>HTML</p></td>
+                                        <td><img class="css" src="css/img/css.png"/></td>
+                                        <td><p>CSS</p></td>
+                                        <td><img class="nodejs" src="css/img/node.png"/></td>
+                                        <td><p>Node.Js</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="angular" src="css/img/angular.png"/></td>
+                                        <td><p>Angular</p></td>
+                                        <td><img class="typescript" src="css/img/typescript.png"/></td>
+                                        <td><p>TypeScipt</p></td>
+                                        <td><img class="nosql" src="css/img/nosql.png"/></td>
+                                        <td><p>NoSQL</p></td>
+                                    </tr>
+                                </table>
                             </div>
                     </div>
                 </div>
@@ -242,7 +280,7 @@
                                     <table>
                                         <tr>
                                             <td>
-                                                <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                                <p style="padding-right:10px;">
                                                     Réalisation d'une application Webdev permettant de gérer les utilisateurs
                                                     ainsi que les privilèges selon leurs roles.
                                                 </p>
@@ -253,10 +291,15 @@
                                         </tr>
                                     </table>
                                     <hr>
-                                    <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
-                                    <p class="techniques_informatiques">
-                                        Webdev - HFSQL
-                                    </p>
+                                    <h2 class="tech_util">Techniques utilisées: </h2>
+                                    <table class="techniques_informatiques">
+                                        <tr>
+                                            <td><img class="wl" src="css/img/wl.png"/></td>
+                                            <td><p>Webdev</p></td>
+                                            <td><img class="hfsql" src="css/img/hfsql.png"/></td>
+                                            <td><p>HFSQL</p></td>
+                                        </tr>
+                                    </table>
                             </div>
                     </div>
                 </div>
@@ -275,7 +318,7 @@
                                             <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/sofimat.png"/>
                                         </td>
                                         <td>
-                                            <p style="padding-left:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                            <p style="padding-left:10px;">
                                                     Réalisation d'une application Windev permettant au chefs de projets de piloter
                                                     les activités sur le mois en cours des techniciens.
                                             </p>
@@ -283,10 +326,15 @@
                                     </tr>
                                 </table>
                                 <hr>
-                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
-                                <p class="techniques_informatiques">
-                                    Windev - HFSQL
-                                </p>
+                                <h2 class="tech_util">Techniques utilisées: </h2>
+                                <table class="techniques_informatiques">
+                                    <tr>
+                                        <td><img class="wl" src="css/img/wl.png"/></td>
+                                        <td><p>Windev</p></td>
+                                        <td><img class="hfsql" src="css/img/hfsql.png"/></td>
+                                        <td><p>HFSQL</p></td>
+                                    </tr>
+                                </table>
                             </div>
                     </div>
                 </div>
@@ -312,10 +360,17 @@
                                     </tr>
                                 </table>
                                 <hr>
-                                <h2 style="text-decoration: underline;color:cadetblue">Techniques utilisées: </h2>
-                                <p class="techniques_informatiques">
-                                    HTML - CSS - Javascript
-                                </p>
+                                <h2 class="tech_util">Techniques utilisées: </h2>
+                                <table class="techniques_informatiques">
+                                    <tr>
+                                        <td><img class="html" src="css/img/html.png"/></td>
+                                        <td><p>HTML</p></td>
+                                        <td><img class="css" src="css/img/css.png"/></td>
+                                        <td><p>CSS</p></td>
+                                        <td><img class="js" src="css/img/js.png"/></td>
+                                        <td><p>JavaScript</p></td>
+                                    </tr>
+                                </table>
                             </div>
                     </div>
                 </div>
@@ -342,8 +397,12 @@
 
 <footer class="bas_de_page">
     <div class="technologies">
-        <div><p>Portofolio réalisé avec: </p></div>
-        <div><img src="css/img/technos.png" /></div>
+        <table>
+            <tr>
+                <td><div><p>Portofolio réalisé avec: </p></div></td>
+                <td><div><img src="css/img/technos.png" /></div></td>
+            </tr>
+        </table>
     </div>
 </footer>
 </html>

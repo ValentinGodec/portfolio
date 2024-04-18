@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family : tahoma;
     font-size : 12px;
@@ -6,6 +10,88 @@ body{
     cursor:default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+    text-decoration: none;
+}
+
+b{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 50px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: white;
+    width: 70%;
+    cursor:default;
+}
+
+
+.techniques_informatiques td{
+    text-align: center;
+}
+
+td p{
+    text-align: left;
+}
+
+#navbar{
+    margin : 0 auto;
+    width:100%;
+    background-color: #2e2b2b;
+    position: fixed;
+    z-index:1;
+}
+
+#navbar #onglets onglet{
+    float:left;
+    width : 125px;
+    height : 30px;
+    line-height : 30px;
+    text-align : center;
+    margin-right : 5px;
+    color : white;
+    padding:10px;
+}
+
+#navbar #onglets onglet:hover{
+    background-color: #181818;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ""; 
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+onglet.actif{
+    background : #181818;
+    color : white;
+    cursor: default;
+}
+
+#contenus img{
+    width:100%; 
+    margin-bottom:5px;
+    height:750px;
+}
+
+/* Page Accueil*/
+
+#container_accueil{
+    height:750px;
+	width:100%;
 }
 
 #centeralign{
@@ -36,107 +122,6 @@ body{
     text-align: center;
 }
 
-#navbar{
-    margin : 0 auto;
-    width:100%;
-    background-color: #2e2b2b;
-    position: fixed;
-    z-index:1;
-}
-
-#contenus img{
-    width:100%; 
-    margin-bottom:5px;
-    height:750px;
-}
-
-.presentation{
-    width:70%;
-    padding-left:15%;
-    font-family: system-ui;
-    font-size: 18px;
-}
-
-b{
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    font-family: Georgia;
-    font-size: 50px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 50%;
-    color: white;
-    width: 70%;
-    cursor:default;
-}
-
-#container_accueil{
-    height:750px;
-	width:100%;
-}
-
-#navbar #onglets onglet{
-    float:left;
-    width : 125px;
-    height : 30px;
-    line-height : 30px;
-    text-align : center;
-    margin-right : 5px;
-    color : white;
-    padding:10px;
-}
-
-onglet.actif{
-    background : #181818;
-    color : white;
-    cursor: default;
-}
-
-
-#navbar #onglets onglet:hover{
-    background-color: #181818;
-    cursor: pointer;
-    transition: 1s;
-}
-
-/***** HACKS CSS *******/
-
-.clearfix:before,
-.clearfix:after {
-    content: ""; 
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.bas_de_page{
-    background-color: #2e2b2b;
-    margin-bottom:0px auto;
-}
-
-.technologies{
-    display: flex;
-    color:white;
-    margin: 0 auto; 
-    padding:23px;
-    font-size: 16px;
-}
-
-.technologies img{
-    height: 50px;
-    width:100px;
-    padding-left: 10px;
-}
-
-.technologies span{
-    display: flex;
-    align-items: baseline;
-}
-
 /* Page Infos */
 
 #container{
@@ -157,116 +142,29 @@ onglet.actif{
     color:white;
 }
 
-#infos hr{
-    margin-top:50px;
-    margin-bottom:50px;
-}
-
-.techniques_informatiques{
-    font-weight: bold;
-    color:black;
+.presentation{
+    width:70%;
+    padding-left:15%;
+    font-family: system-ui;
     font-size: 18px;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-a{
-    text-decoration: none;
-}
-
-.texte{
-    position:absolute;
-    font-weight: bold;
-    left:0;
-    bottom:0;
-}
-
-.modal_open{
-    margin-top:50px;
-    width:80%;
-    height:250px;
-    color:black;
-    padding: 10px;
-    opacity: 0.7;
-    transition: transform .1s;
-    border: solid white 2px;
-}
-
-.modal_open:hover{
-    -ms-transform: scale(1.1) !important; /* IE 9 */
-    -webkit-transform: scale(1.1) !important; /* Safari 3-8 */
-    transform: scale(1.1) !important; 
-    cursor: pointer;
-}
-
-.modal_open:hover img{
-    opacity: 0.9;
-}
-
-.blocks {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 4%;
-}
-
-.modal{
-    height:2000px;
-    width:100%;
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    position: fixed;
-    top:0%;
-    left:0%;
-    display:none;
-    z-index: 98;
-}
-
-.modal-content{
-    opacity: 1;
-    position: absolute;
-    position: fixed;
-    background-color: rgb(224, 224, 214);
-    top:15%;
-    left:25%;
-    width:50%;
-    height:67%;
-    border-radius: 5px;
-    overflow-y: scroll;
-    scrollbar-color: white grey;
-    scrollbar-width: thin;
-    padding:20px 20px 20px 20px;
-}
-
-
-.modal_close{
-    background-color: black;
-    width:5%;
-    left:48%;
-    text-align: center;
-    color:white;
-    border-radius: 5px;
-    margin-top:-17px;
-    border:1px solid black;
-    position: fixed;
-}
-
-
-.modal_close:hover{
-    transition: 1s;
-    cursor:pointer;
-    background-color: white;
-    color:black;
-    border:1px solid black;
-}
-
-td{
-    width:80%;
 }
 
 .separateur{
     margin: 50px 0 50px 0;
+}
+
+.description{
+    text-align: center;
+    font-family: serif;
+    font-size:18px;
+}
+
+#advances{
+    padding-left:5%;
+}
+
+.tableprogress td{
+    width:80%;
 }
 
 .progress{
@@ -318,13 +216,187 @@ td{
     transition: padding-left 2s ease-in-out;
 }
 
+/* Page Projets */
 
-#advances{
-    padding-left:5%;
+.blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 4%;
 }
+
+.modal_open{
+    margin-top:50px;
+    width:80%;
+    height:250px;
+    color:black;
+    padding: 10px;
+    opacity: 0.7;
+    overflow: hidden;
+    transition: transform .1s;
+    border: solid white 2px;
+}
+
+.modal_open:hover{
+    -ms-transform: scale(1.1) !important; /* IE 9 */
+    -webkit-transform: scale(1.1) !important; /* Safari 3-8 */
+    transform: scale(1.1) !important; 
+    cursor: pointer;
+}
+
+.modal_open img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    transition: all .3s ease;
+  }
+  
+.modal_open img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+  }
+
+.modal-txt{
+    position:absolute;
+    font-weight: bold;
+    font-family: "Segoe Print", Times, serif;
+    font-size: 20px;
+    left:0;
+    bottom:0;
+}
+
+
+.modal{
+    height:2000px;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    position: fixed;
+    top:0%;
+    left:0%;
+    display:none;
+    z-index: 98;
+}
+
+.modal-content{
+    opacity: 1;
+    position: absolute;
+    position: fixed;
+    background-color: rgb(224, 224, 214);
+    top:15%;
+    left:25%;
+    width:50%;
+    height:67%;
+    border-radius: 5px;
+    overflow-y: scroll;
+    scrollbar-color: white grey;
+    scrollbar-width: thin;
+    padding:20px 20px 20px 20px;
+}
+
+.modal-content table tr td p{
+    font-family: 'Apple Chancery', cursive; 
+    font-size:18px;
+}
+
+.modal_close{
+    background-color: black;
+    width:5%;
+    left:48%;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    margin-top:-17px;
+    border:1px solid black;
+    position: fixed;
+}
+
+
+.modal_close:hover{
+    transition: 1s;
+    cursor:pointer;
+    background-color: white;
+    color:black;
+    border:1px solid black;
+}
+
+.html{
+    width:60px;
+    height:70px;
+}
+
+.css{
+    width:40px;
+    height:70px;
+}
+
+.nodejs{
+    width:70px;
+    height:70px;
+}
+
+.angular{
+    width:110px;
+    height:70px;
+}
+
+.typescript{
+    width:100px;
+    height:60px;
+}
+
+.nosql{
+    width:200px;
+    height:100px;
+}
+
+.js{
+    width:60px;
+    height:70px;
+}
+
+.php{
+    width:100px;
+    height:70px;
+}
+
+.mysql{
+    width:100px;
+    height:100px;
+}
+
+.vb{
+    width:60px;
+    height:70px;
+}
+
+.wl{
+    width:110px;
+    height:50px;
+}
+
+.hfsql{
+    width:100px;
+    height:50px;
+}
+
+.tech_util{
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.techniques_informatiques{
+    font-weight: bold;
+    color:black;
+    font-size: 22px;
+}
+
+/* Page CV */
+
 .CV{
     padding-top:25px;
 }
+
+/* Page contact */
 
 .contenu_contact{
     background-color: #333;
@@ -425,13 +497,20 @@ td{
     background-position: 210px;}
 }
 
-.description{
-    text-align: center;
-    font-family: serif;
-    font-size:18px;
+.bas_de_page{
+    background-color: #2e2b2b;
+    margin-bottom:0px auto;
 }
 
-.pro{
-    font-family: system-ui;
-    font-size: 18px;
+.technologies{
+    display: flex;
+    color:white;
+    margin: 0 auto; 
+    padding:10px;
+    font-size: 16px;
+}
+
+.technologies img{
+    width: 200px;
+    height:160px;
 }
