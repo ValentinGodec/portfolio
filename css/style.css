@@ -48,7 +48,7 @@ td p{
     z-index:1;
 }
 
-#navbar #onglets onglet{
+#navbar #onglets .onglet{
     float:left;
     width : 125px;
     height : 30px;
@@ -59,7 +59,7 @@ td p{
     padding:10px;
 }
 
-#navbar #onglets onglet:hover{
+#navbar #onglets .onglet:hover{
     background-color: #181818;
     cursor: pointer;
     transition: 1s;
@@ -75,7 +75,7 @@ td p{
     clear: both;
 }
 
-onglet.actif{
+.onglet.active{
     background : #181818;
     color : white;
     cursor: default;
@@ -89,7 +89,7 @@ onglet.actif{
 
 /* Page Accueil*/
 
-#container_accueil{
+.container_accueil{
     height:750px;
 	width:100%;
 }
@@ -98,6 +98,7 @@ onglet.actif{
     position: absolute;
     top:40%;
     left:35%;
+    text-align: center;
 }
 
 #centeralign h1 {
@@ -117,14 +118,14 @@ onglet.actif{
     text-shadow: 5px 5px 5px black;
   }
 
-#container h1{
+.container h1{
     text-transform: uppercase;
     text-align: center;
 }
 
 /* Page Infos */
 
-#container{
+.container{
     height:100%;
 	width:100%;
 	margin:0;
@@ -392,7 +393,7 @@ onglet.actif{
 
 /* Page CV */
 
-.CV{
+.moncv{
     padding-top:25px;
 }
 
@@ -471,31 +472,6 @@ onglet.actif{
    
     --animation-timing: 0.6s;
   }
-
-#btn_shine{ 
-    transform: translate(-50%,-50%);
-    color: #ffffff;
-    background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
-    background-position: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 5s infinite linear;
-    animation-fill-mode: forwards;
-    -webkit-text-size-adjust: none;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-@keyframes shine{
-  0%{
-    background-position: -400px;}
-  50%{
-    background-position: 60px;}
-  100%{
-    background-position: 210px;}
-}
 
 .bas_de_page{
     background-color: #2e2b2b;

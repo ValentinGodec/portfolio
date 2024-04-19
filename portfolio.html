@@ -1,57 +1,46 @@
 <!DOCTYPE html>
-<header>
+<head>
     <title>Portfolio Valentin</title>
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</header>
+</head>
 
 <body id="top">
     <div id="navbar">
         <div id="onglets">
-            <a href="#accueil"><onglet>Accueil</onglet></a>
-            <a href="#mesinfos"><onglet>Infos</onglet></a>
-            <a href="#mesprojets"><onglet>Projets</onglet></a>
-            <a href="#moncv"><onglet>CV</onglet></a>
-            <a href="#contact"><onglet>Contact</onglet></a>
+            <a href="#accueil" class="onglet-link"><div class="onglet">Accueil</div></a>
+            <a href="#mesinfos" class="onglet-link"><div class="onglet">Infos</div></a>
+            <a href="#mesprojets" class="onglet-link"><div class="onglet">Projets</div></a>
+            <a href="#moncv" class="onglet-link"><div class="onglet">CV</div></a>
+            <a href="#contact" class="onglet-link"><div class="onglet">Contact</div></a>
         </div>
     </div>
         <div id="contenus">
 
             <!--Page Accueil-->
 
-            <contenu id="accueil">
-                <div id="container_accueil">
+            <div id="accueil" class="section">
+                <div class="container_accueil">
                             <div id="centeralign">
-                                <center>
                                     <h1>Valentin Godec</h1>
                                     <p>Développeur Web</p>
-                                </center>
                             </div>
                 
                     <img class="image" src="css/img/Img_Accueil.avif" />  
                 </div>
-            </contenu>
+            </div>
 
             <!--Page Infos-->
 
-            <div id="container">
+            <div class="container">
                 <div id="contenu">
-            <contenu id="mesinfos">
-                    <div hidden>
-                            <a href="#contenu_moi" id="moi">A propos de moi</a><br />
-                            <a href="#contenu_projets" id="projets">Projets</a><br/>
-                            <a href="#contenu_exps" id="exps">Expériences</a>
-                    </div>
-                
+                    <div id="mesinfos" class="section">
                             <span>
                                 <h1>- A propos de moi -</h1>
                                 <center>
-                                        <img src="css/img/photos_profil.jpg" style="height:250px;width:250px;border-radius: 360px;clip:rect(0,0,50px,0);"/>
+                                    <img src="css/img/photos_profil.jpg" style="height:250px;width:250px;border-radius: 360px;clip:rect(0,0,50px,0);"/>
                                 </center>
                                 <p class="presentation">
                                     Je m'appelle Valentin Godec, développeur web junior de niveau 4.<br/> 
@@ -104,8 +93,8 @@
                                     </table>
                                 </center>
                             </span>
-                    </contenu>
-                    <contenu id="mesprojets">
+                        </div>
+                    <div id="mesprojets" class="section">
                     <hr class="separateur">
                         <span>
                             <h1>- Portfolio -</h1>
@@ -144,21 +133,19 @@
                                 </div>
                             </div>
                         </span> 
-                    </contenu>    
+                    </div>    
                     <hr class="separateur">
-                    <contenu>
+                    <div>
                         <span>
-                            <div class="CV">
-                                <h1 id="moncv">- Mon CV -</h1>
+                            <div id="moncv" class="section">
+                                <h1 id="CV" >- Mon CV -</h1>
                                 <br/>
                                 <center>
-                                <embed src="css/CV_Valentin.pdf" width="1000" height="1200" type="application/pdf"/>  
+                                <iframe src="css/CV_Valentin.pdf" width="1000" height="1200" type="application/pdf"></iframe>  
                                 </center>
                             </div>
-                            
-                            
                         </span>
-                    </contenu>
+                    </div>
                     </div>
                     
                 </div>
@@ -168,7 +155,7 @@
 
                 <div class="modal" id="modal-medic">
                     <div class="modal-content">
-                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                        <button class="modal_close">fermer (Escp)</button> 
                             <div>
                                 <h1>Mise en situation GSB - Site médical</h1>
                                 <h4>Projet lors de mon BTS SIO réalisé sur les deux années.</h4>
@@ -230,7 +217,7 @@
                 
                 <div class="modal" id="popup-piano">
                     <div class="modal-content">
-                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                        <button class="modal_close">fermer (Escp)</button> 
                             <div>
                                 <h1>Site d'apprentissage pour le piano</h1>
                                 <h4>Projet personnel réalisé en auto-didacte</h4>
@@ -273,7 +260,7 @@
                 
                 <div class="modal" id="popup-eureden">
                     <div class="modal-content">
-                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                        <button class="modal_close">fermer (Escp)</button> 
                             <div>
                                 <h1>eureden</h1>
                                 <h3>Projet réalisé lors de mon stage de première année en BTS</h3>
@@ -308,7 +295,7 @@
                 
                 <div class="modal" id="popup-sofimat">
                     <div class="modal-content">
-                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                        <button class="modal_close">fermer (Escp)</button> 
                             <div>
                                 <h1>sofimat</h1>
                                 <h3>Projet réalisé lors de mon stage de deuxième année en BTS.</h3>
@@ -343,7 +330,7 @@
                 
                 <div class="modal" id="popup-portfolio">
                     <div class="modal-content">
-                        <button class="modal_close" class="link modal_close">fermer (Escp)</button> 
+                        <button class="modal_close">fermer (Escp)</button> 
                             <div>
                                 <h1>portfolio</h1>
                                 <h3>Site sur lequel vous êtes.</h3>
@@ -374,36 +361,39 @@
                             </div>
                     </div>
                 </div>
-            </contenu>
+            </div>
 
             <!--Page Contact-->
-            <contenu id="contact">
+            <div id="contact" class="section">
                     <div class="contenu_contact">
                         <div class="contact">
                             <h1>- Me contacter -</h1>
                             <hr>
                             <h2>Email: </h2>
-                            <a class="email" id="btn_shine" href="mailto:godecvalentin@gmail.com">godecvalentin@gmail.com</a>
+                            <a class="email" href="mailto:godecvalentin@gmail.com">godecvalentin@gmail.com</a>
                             <h2>Linkedin: </h2>
-                            <a class="linkedin" id="btn_shine" href="https://urlz.fr/nXIj" target="_blank">Valentin Godec</a>
+                            <a class="linkedin" href="https://urlz.fr/nXIj" target="_blank">Valentin Godec</a>
                             <h2>Github: </h2>
-                            <a class="github" id="btn_shine" href="https://github.com/ValentinGodec" target="_blank">Cliquer pour voir</a>
+                            <a class="github" href="https://github.com/ValentinGodec" target="_blank">Cliquer pour voir</a>
                         </div>
                     </div>
-            </contenu>
+                </div>
         </div>
+        
+        <footer class="bas_de_page">
+            <div class="technologies">
+                <table>
+                    <tr>
+                        <td><div><p>Portofolio réalisé avec: </p></div></td>
+                        <td><div><img src="css/img/technos.png" /></div></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
         <script src="js/portfolio.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
-
-<footer class="bas_de_page">
-    <div class="technologies">
-        <table>
-            <tr>
-                <td><div><p>Portofolio réalisé avec: </p></div></td>
-                <td><div><img src="css/img/technos.png" /></div></td>
-            </tr>
-        </table>
-    </div>
-</footer>
 </html>
 

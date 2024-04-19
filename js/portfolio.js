@@ -2,35 +2,32 @@
 var expsElement = document.getElementById("exps");
 var boutons_modele = document.querySelectorAll(".modal_open");
 
-document.addEventListener('scroll', function () {
-    var scrollPosition = window.scrollY;
+document.addEventListener("DOMContentLoaded", function() {
+    var ongletLinks = document.querySelectorAll('.onglet-link');
 
-    // Vous devrez ajuster ces valeurs en fonction de votre mise en page
-    var accueilPosition = document.getElementById('accueil').offsetTop;
-    var infosPosition = document.getElementById('mesinfos').offsetTop;
-    var projetsPosition = document.getElementById('mesprojets').offsetTop;
-    var cvPosition = document.getElementById('moncv').offsetTop;
-    var contactPosition = document.getElementById('contact').offsetTop;
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
 
-    // Supprimer la classe active de tous les onglets
-    var onglets = document.querySelectorAll('#onglets a onglet');
-    onglets.forEach(function (onglet) {
-        onglet.classList.remove('actif');
+        document.querySelectorAll('.section').forEach(function(section) {
+            if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+                var sectionId = section.getAttribute('id');
+                setActiveOnglet(sectionId);
+            }
+        });
     });
 
-    // Ajouter la classe active à l'onglet correspondant à la section visible
-    if (scrollPosition >= accueilPosition && scrollPosition < infosPosition) {
-        document.querySelector('#onglets a[href="#accueil"] onglet').classList.add('actif');
-    } else if (scrollPosition >= infosPosition && scrollPosition < projetsPosition) {
-        document.querySelector('#onglets a[href="#mesinfos"] onglet').classList.add('actif');
-    } else if (scrollPosition >= projetsPosition && scrollPosition < cvPosition) {
-        document.querySelector('#onglets a[href="#mesprojets"] onglet').classList.add('actif');
-    } else if (scrollPosition >= cvPosition && scrollPosition < contactPosition) {
-        document.querySelector('#onglets a[href="#moncv"] onglet').classList.add('actif');
-    } else{
-        document.querySelector('#onglets a[href="#contact"] onglet').classList.add('actif');
+    function setActiveOnglet(sectionId) {
+        ongletLinks.forEach(function(link) {
+            var href = link.getAttribute('href').substring(1);
+            if (href === sectionId) {
+                link.querySelector('.onglet').classList.add('active');
+            } else {
+                link.querySelector('.onglet').classList.remove('active');
+            }
+        });
     }
 });
+
 
 boutons_modele.forEach(function(btn){
     btn.onclick = function(){
