@@ -160,12 +160,8 @@ td p{
     font-size:18px;
 }
 
-#advances{
-    padding-left:5%;
-}
-
 .tableprogress td{
-    width:80%;
+    width:50%;
 }
 
 .progress{
