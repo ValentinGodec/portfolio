@@ -8,34 +8,31 @@
 </head>
 
 <body id="top">
-    <div id="navbar">
-        <div id="onglets">
-            <a href="#accueil" class="onglet-link"><div class="onglet">Accueil</div></a>
-            <a href="#mesinfos" class="onglet-link"><div class="onglet">Infos</div></a>
-            <a href="#mesprojets" class="onglet-link"><div class="onglet">Projets</div></a>
-            <a href="#moncv" class="onglet-link"><div class="onglet">CV</div></a>
-            <a href="#contact" class="onglet-link"><div class="onglet">Contact</div></a>
+    <header>
+        <div id="navbar">
+            <div id="onglets">
+                <a href="#accueil" class="onglet-link"><div class="onglet">Accueil</div></a>
+                <a href="#mesinfos" class="onglet-link"><div class="onglet">Infos</div></a>
+                <a href="#mesprojets" class="onglet-link"><div class="onglet">Projets</div></a>
+                <a href="#moncv" class="onglet-link"><div class="onglet">CV</div></a>
+                <a href="#contact" class="onglet-link"><div class="onglet">Contact</div></a>
+            </div>
         </div>
-    </div>
+    </header>
         <div id="contenus">
-
             <!--Page Accueil-->
-
             <div id="accueil" class="section">
                 <div class="container_accueil">
-                            <div id="centeralign">
-                                    <h1>Valentin Godec</h1>
-                                    <p>Développeur Web</p>
-                            </div>
-                
+                    <div id="centeralign">
+                        <h1>Valentin Godec</h1>
+                        <p>Développeur Web</p>
+                    </div>
                     <img class="image" src="css/img/Img_Accueil.avif" />  
                 </div>
             </div>
-
-            <!--Page Infos-->
-
             <div class="container">
                 <div id="contenu">
+                    <!--Page Infos-->
                     <div id="mesinfos" class="section">
                             <span>
                                 <h1>- A propos de moi -</h1>
@@ -94,8 +91,9 @@
                                 </center>
                             </span>
                         </div>
-                    <div id="mesprojets" class="section">
                     <hr class="separateur">
+                    <!--Page Projets-->
+                    <div id="mesprojets" class="section">
                         <span>
                             <h1>- Portfolio -</h1>
                             <p class="description">Vous trouverez ci-dessous les projets sur lesquelles j'ai travaillé</p>
@@ -135,145 +133,176 @@
                         </span> 
                     </div>    
                     <hr class="separateur">
-                    <div>
-                        <span>
-                            <div id="moncv" class="section">
-                                <h1 id="CV" >- Mon CV -</h1>
-                                <br/>
-                                <center>
-                                <iframe src="css/CV_Valentin.pdf" style="width:80%; height:100em;" type="application/pdf"></iframe>  
-                                </center>
-                            </div>
-                        </span>
+                    <!--Page CV-->    
+                    <div id="moncv" class="section">
+                        <h1 id="CV" >- Mon CV -</h1>
+                        <br/>
+                        <center>
+                        <iframe src="css/CV_Valentin.pdf" style="width:80%; height:100em;" type="application/pdf"></iframe>  
+                        </center>
                     </div>
-                    </div>
-                    
-                </div>
-                </div>
-                <!--popups-->
-                <!--popup gsb-->
+                </div>    
+            </div>
+                <div id="popups">
+                    <!--popups-->
+                    <!--popup gsb-->
 
-                <div class="modal" id="modal-medic">
-                    <div class="modal-content">
-                        <button class="modal_close">fermer (Escp)</button> 
-                            <div>
-                                <h1>Mise en situation GSB - Site médical</h1>
-                                <h4>Projet lors de mon BTS SIO réalisé sur les deux années.</h4>
-                                <h2>BTS SIO - 1ere année</h2>
+                    <div class="modal" id="modal-medic">
+                        <div class="modal-content">
+                            <button class="modal_close">fermer (Escp)</button> 
                                 <div>
-                                    <table>
-                                        <tr>
-                                            <td style="width:50%";>
-                                                <img style="width: 400px; height:275px; vertical-align: top; border-radius:15px;" src="css/img/Page_gsb2.PNG"/>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    Réalisation d'une application web permettant aux visiteurs médicaux de
-                                                    gérer des fiches de frais lors de leurs déplacements.
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <h2>BTS SIO - 2eme année</h2>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p style="padding-right:10px;">
-                                                Réalisation d'une application avec un CRUD permettant aux visiteurs médicaux de
-                                                gérer leurs comptes rendus.
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/gsb2.png"/>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <hr>
-                                <h2 class="tech_util">Techniques utilisées: </h2>
-                                <table class="techniques_informatiques">
-                                    <tr>
-                                        <td><img class="html" src="css/img/html.png"/></td>
-                                        <td><p>HTML</p></td>
-                                        <td><img class="css" src="css/img/css.png"/></td>
-                                        <td><p>CSS</p></td>
-                                        <td><img class="js" src="css/img/js.png"/></td>
-                                        <td><p>JavaScript</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="php" src="css/img/php.png"/></td>
-                                        <td><p>PHP</p></td>
-                                        <td><img class="mysql" src="css/img/sql.png"/></td>
-                                        <td><p>Mysql</p></td>
-                                        <td><img class="vb" src="css/img/vb.png"/></td>
-                                        <td><p>Vb .net</p></td>
-                                    </tr>
-                                </table>
-                            </div>
-                    </div>
-                </div>
-
-                <!--popup piano-->
-                
-                <div class="modal" id="popup-piano">
-                    <div class="modal-content">
-                        <button class="modal_close">fermer (Escp)</button> 
-                            <div>
-                                <h1>Site d'apprentissage pour le piano</h1>
-                                <h4>Projet personnel réalisé en auto-didacte</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p>
-                                                Réalisation d'une application avec un crud me permettant de stocker
-                                                mes musiques ainsi qu'une partie cours.
-                                            </p>
-                                        </td>
-                                        <td><img  style="width:400px; height:275px;" src="css/img/site_piano.png"/></td>
-                                    </tr>
-                                </table>
-                                <hr>
-                                <h2 class="tech_util">Techniques utilisées: </h2>
-                                <table class="techniques_informatiques">
-                                    <tr>
-                                        <td><img class="html" src="css/img/html.png"/></td>
-                                        <td><p>HTML</p></td>
-                                        <td><img class="css" src="css/img/css.png"/></td>
-                                        <td><p>CSS</p></td>
-                                        <td><img class="nodejs" src="css/img/node.png"/></td>
-                                        <td><p>Node.Js</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="angular" src="css/img/angular.png"/></td>
-                                        <td><p>Angular</p></td>
-                                        <td><img class="typescript" src="css/img/typescript.png"/></td>
-                                        <td><p>TypeScipt</p></td>
-                                        <td><img class="nosql" src="css/img/nosql.png"/></td>
-                                        <td><p>NoSQL</p></td>
-                                    </tr>
-                                </table>
-                            </div>
-                    </div>
-                </div>
-
-                <!--popup eureden-->
-                
-                <div class="modal" id="popup-eureden">
-                    <div class="modal-content">
-                        <button class="modal_close">fermer (Escp)</button> 
-                            <div>
-                                <h1>eureden</h1>
-                                <h3>Projet réalisé lors de mon stage de première année en BTS</h3>
+                                    <h1>Mise en situation GSB - Site médical</h1>
+                                    <h4>Projet lors de mon BTS SIO réalisé sur les deux années.</h4>
+                                    <h2>BTS SIO - 1ere année</h2>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td style="width:50%";>
+                                                    <img style="width: 400px; height:275px; vertical-align: top; border-radius:15px;" src="css/img/Page_gsb2.PNG"/>
+                                                </td>
+                                                <td>
+                                                    <p>
+                                                        Réalisation d'une application web permettant aux visiteurs médicaux de
+                                                        gérer des fiches de frais lors de leurs déplacements.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <h2>BTS SIO - 2eme année</h2>
                                     <table>
                                         <tr>
                                             <td>
                                                 <p style="padding-right:10px;">
-                                                    Réalisation d'une application Webdev permettant de gérer les utilisateurs
-                                                    ainsi que les privilèges selon leurs roles.
+                                                    Réalisation d'une application avec un CRUD permettant aux visiteurs médicaux de
+                                                    gérer leurs comptes rendus.
                                                 </p>
                                             </td>
                                             <td>
-                                                <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/eureden.png"/>
+                                                <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/gsb2.png"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <h2 class="tech_util">Techniques utilisées: </h2>
+                                    <table class="techniques_informatiques">
+                                        <tr>
+                                            <td><img class="html" src="css/img/html.png"/></td>
+                                            <td><p>HTML</p></td>
+                                            <td><img class="css" src="css/img/css.png"/></td>
+                                            <td><p>CSS</p></td>
+                                            <td><img class="js" src="css/img/js.png"/></td>
+                                            <td><p>JavaScript</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="php" src="css/img/php.png"/></td>
+                                            <td><p>PHP</p></td>
+                                            <td><img class="mysql" src="css/img/sql.png"/></td>
+                                            <td><p>Mysql</p></td>
+                                            <td><img class="vb" src="css/img/vb.png"/></td>
+                                            <td><p>Vb .net</p></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!--popup piano-->
+                    
+                    <div class="modal" id="popup-piano">
+                        <div class="modal-content">
+                            <button class="modal_close">fermer (Escp)</button> 
+                                <div>
+                                    <h1>Site d'apprentissage pour le piano</h1>
+                                    <h4>Projet personnel réalisé en auto-didacte</h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    Réalisation d'une application avec un crud me permettant de stocker
+                                                    mes musiques ainsi qu'une partie cours.
+                                                </p>
+                                            </td>
+                                            <td><img  style="width:400px; height:275px;" src="css/img/site_piano.png"/></td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <h2 class="tech_util">Techniques utilisées: </h2>
+                                    <table class="techniques_informatiques">
+                                        <tr>
+                                            <td><img class="html" src="css/img/html.png"/></td>
+                                            <td><p>HTML</p></td>
+                                            <td><img class="css" src="css/img/css.png"/></td>
+                                            <td><p>CSS</p></td>
+                                            <td><img class="nodejs" src="css/img/node.png"/></td>
+                                            <td><p>Node.Js</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="angular" src="css/img/angular.png"/></td>
+                                            <td><p>Angular</p></td>
+                                            <td><img class="typescript" src="css/img/typescript.png"/></td>
+                                            <td><p>TypeScipt</p></td>
+                                            <td><img class="nosql" src="css/img/nosql.png"/></td>
+                                            <td><p>NoSQL</p></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!--popup eureden-->
+                    
+                    <div class="modal" id="popup-eureden">
+                        <div class="modal-content">
+                            <button class="modal_close">fermer (Escp)</button> 
+                                <div>
+                                    <h1>eureden</h1>
+                                    <h3>Projet réalisé lors de mon stage de première année en BTS</h3>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p style="padding-right:10px;">
+                                                        Réalisation d'une application Webdev permettant de gérer les utilisateurs
+                                                        ainsi que les privilèges selon leurs roles.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/eureden.png"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <h2 class="tech_util">Techniques utilisées: </h2>
+                                        <table class="techniques_informatiques">
+                                            <tr>
+                                                <td><img class="wl" src="css/img/wl.png"/></td>
+                                                <td><p>Webdev</p></td>
+                                                <td><img class="hfsql" src="css/img/hfsql.png"/></td>
+                                                <td><p>HFSQL</p></td>
+                                            </tr>
+                                        </table>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!--popup Sofimat-->
+                    
+                    <div class="modal" id="popup-sofimat">
+                        <div class="modal-content">
+                            <button class="modal_close">fermer (Escp)</button> 
+                                <div>
+                                    <h1>sofimat</h1>
+                                    <h3>Projet réalisé lors de mon stage de deuxième année en BTS.</h3>
+                                    <table>
+                                        <tr>
+                                            <td style="width:50%;">
+                                                <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/sofimat.png"/>
+                                            </td>
+                                            <td>
+                                                <p style="padding-left:10px;">
+                                                        Réalisation d'une application Windev permettant au chefs de projets de piloter
+                                                        les activités sur le mois en cours des techniciens.
+                                                </p>
                                             </td>
                                         </tr>
                                     </table>
@@ -282,103 +311,67 @@
                                     <table class="techniques_informatiques">
                                         <tr>
                                             <td><img class="wl" src="css/img/wl.png"/></td>
-                                            <td><p>Webdev</p></td>
+                                            <td><p>Windev</p></td>
                                             <td><img class="hfsql" src="css/img/hfsql.png"/></td>
                                             <td><p>HFSQL</p></td>
                                         </tr>
                                     </table>
-                            </div>
+                                </div>
+                        </div>
                     </div>
-                </div>
 
-                <!--popup Sofimat-->
-                
-                <div class="modal" id="popup-sofimat">
-                    <div class="modal-content">
-                        <button class="modal_close">fermer (Escp)</button> 
-                            <div>
-                                <h1>sofimat</h1>
-                                <h3>Projet réalisé lors de mon stage de deuxième année en BTS.</h3>
-                                <table>
-                                    <tr>
-                                        <td style="width:50%;">
-                                            <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/sofimat.png"/>
-                                        </td>
-                                        <td>
-                                            <p style="padding-left:10px;">
-                                                    Réalisation d'une application Windev permettant au chefs de projets de piloter
-                                                    les activités sur le mois en cours des techniciens.
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <hr>
-                                <h2 class="tech_util">Techniques utilisées: </h2>
-                                <table class="techniques_informatiques">
-                                    <tr>
-                                        <td><img class="wl" src="css/img/wl.png"/></td>
-                                        <td><p>Windev</p></td>
-                                        <td><img class="hfsql" src="css/img/hfsql.png"/></td>
-                                        <td><p>HFSQL</p></td>
-                                    </tr>
-                                </table>
-                            </div>
+                    <!--popup portfolio-->
+                    
+                    <div class="modal" id="popup-portfolio">
+                        <div class="modal-content">
+                            <button class="modal_close">fermer (Escp)</button> 
+                                <div>
+                                    <h1>portfolio</h1>
+                                    <h3>Site sur lequel vous êtes.</h3>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
+                                                    Projet permettant de montrer les différents projets sur lesquelles j'ai pu travailler.
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/portfolio.PNG"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <h2 class="tech_util">Techniques utilisées: </h2>
+                                    <table class="techniques_informatiques">
+                                        <tr>
+                                            <td><img class="html" src="css/img/html.png"/></td>
+                                            <td><p>HTML</p></td>
+                                            <td><img class="css" src="css/img/css.png"/></td>
+                                            <td><p>CSS</p></td>
+                                            <td><img class="js" src="css/img/js.png"/></td>
+                                            <td><p>JavaScript</p></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        </div>
                     </div>
-                </div>
-
-                <!--popup portfolio-->
-                
-                <div class="modal" id="popup-portfolio">
-                    <div class="modal-content">
-                        <button class="modal_close">fermer (Escp)</button> 
-                            <div>
-                                <h1>portfolio</h1>
-                                <h3>Site sur lequel vous êtes.</h3>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p style="padding-right:10px; font-family: Apple Chancery, cursive; font-size:18px;">
-                                                Projet permettant de montrer les différents projets sur lesquelles j'ai pu travailler.
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <img style="width:400px; height:275px; vertical-align: top; padding: 0px 0px 0px 0px; border-radius:15px;" src="css/img/portfolio.PNG"/>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <hr>
-                                <h2 class="tech_util">Techniques utilisées: </h2>
-                                <table class="techniques_informatiques">
-                                    <tr>
-                                        <td><img class="html" src="css/img/html.png"/></td>
-                                        <td><p>HTML</p></td>
-                                        <td><img class="css" src="css/img/css.png"/></td>
-                                        <td><p>CSS</p></td>
-                                        <td><img class="js" src="css/img/js.png"/></td>
-                                        <td><p>JavaScript</p></td>
-                                    </tr>
-                                </table>
-                            </div>
+            </div>
+            <!--Page Contact-->
+            <div id="contact" class="section">
+                <div class="contenu_contact">
+                    <div class="contact">
+                        <h1>- Me contacter -</h1>
+                        <hr>
+                        <h2>Email: </h2>
+                        <a class="email" href="mailto:godecvalentin@gmail.com">godecvalentin@gmail.com</a>
+                        <h2>Linkedin: </h2>
+                        <a class="linkedin" href="https://urlz.fr/nXIj" target="_blank">Valentin Godec</a>
+                        <h2>Github: </h2>
+                        <a class="github" href="https://github.com/ValentinGodec" target="_blank">Cliquer pour voir</a>
                     </div>
                 </div>
             </div>
-
-            <!--Page Contact-->
-            <div id="contact" class="section">
-                    <div class="contenu_contact">
-                        <div class="contact">
-                            <h1>- Me contacter -</h1>
-                            <hr>
-                            <h2>Email: </h2>
-                            <a class="email" href="mailto:godecvalentin@gmail.com">godecvalentin@gmail.com</a>
-                            <h2>Linkedin: </h2>
-                            <a class="linkedin" href="https://urlz.fr/nXIj" target="_blank">Valentin Godec</a>
-                            <h2>Github: </h2>
-                            <a class="github" href="https://github.com/ValentinGodec" target="_blank">Cliquer pour voir</a>
-                        </div>
-                    </div>
-                </div>
-        </div>
+        </div> 
         
         <footer class="bas_de_page">
             <div class="technologies">
